@@ -1,0 +1,18 @@
+.home {
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e8efff 10%,   /* stronger light blue */
+    #f6f8ff 60%, /* soft transition */
+    #ffffff 100% /* clean white bottom */
+  );
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  color: #142246;
+}

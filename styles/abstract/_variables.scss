@@ -1,0 +1,36 @@
+// styles/abstract/_variables.scss
+
+// The Anchor (Your Navy)
+$color-navy-900: #1D2650; 
+$color-navy-800: #263266; 
+$color-navy-100: #E8EAEE; 
+
+// The Energy (Your Green)
+$color-green-500: #75BD43; 
+$color-green-600: #62A136; 
+$color-green-100: #F1F8EC; 
+
+// The Bridge (Teal/Cyan)
+$color-teal-500: #43BD98; 
+
+// The Neutrals
+$color-white: #ffffff;
+$color-surface: #F5F7FA; 
+$color-text-main: #1D2650; 
+$color-text-muted: #5F6B8A; 
+
+// --- CREATE CSS VARIABLES (CUSTOM PROPERTIES) ---
+:root {
+  /* Colors */
+  --color-navy-900: #{$color-navy-900};
+  --color-green-500: #{$color-green-500};
+  --color-green-600: #{$color-green-600};
+  
+  /* Semantic Usage */
+  --bg-body: #{$color-surface};
+  --text-heading: #{$color-navy-900};
+  --text-body: #{$color-text-main};
+  --text-link: #{$color-navy-900}; 
+  --text-link-hover: #{$color-green-600}; 
+  --text-accent: #{$color-green-500}; 
+}

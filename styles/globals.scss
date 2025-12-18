@@ -1,3 +1,5 @@
+@import 'abstract/variables';
+@import 'abstract/mixins';
 @import "tailwindcss";
 
 :root {
@@ -16,4 +18,31 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  &:hover {
+    
+  }
+}
+
+nav {
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+
+    &.active {
+      font-weight: 700;
+    }
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
 }

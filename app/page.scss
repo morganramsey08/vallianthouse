@@ -1,59 +1,88 @@
+@import '../styles/abstract/variables';
 
-
-
-
-// app/page.scss
-
-@import '../styles/abstract/variables'; 
-
-// Set the body's background and default text color based on the palette
 .home {
-    height: 100vh;
-    background: linear-gradient(
-      135deg,
-      #e8efff 10%,   /* stronger light blue */
-      #f6f8ff 60%, /* soft transition */
-      #ffffff 100% /* clean white bottom */
-    );
-    padding: 0 1rem;
+  min-height: 100vh;
+  padding: 0 1rem;
+
+  background-image: url(../public/img/konowabg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--text-white);
+
+  /* ============================
+     LOCATION GROUP
+     ============================ */
+
+  .location-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1.25rem;
     align-items: center;
-    background-color: var(--bg-body);
-    color: var(--text-body); // Deep Navy is the default text color
-    background-image: url(../public/img/konowabg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    .nav a {
-        // Style for the main navigation links
-        color: white; // Deep Navy
-        font-weight: 500;
-        transition: color 0.2s ease;
-
-        &:hover {
-            opacity: 0.8; // Bright Green on hover
-        }
+    > div {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
     }
 
-    .site-title {
-        // Apply the bright green to the tagline for maximum impact
-        color: var(--text-accent); 
-        letter-spacing: 0.1em;
+    p {
+      font-size: 1.125rem;
     }
 
     .location-phone {
-        // Style the phone number links
-        color: var(--text-white); // Deep Navy
-        transition: color 0.2s ease;
-        
-        &:hover {
-            opacity: 0.8; // Bright Green on hover
-        }
+      display: inline-block;
+      margin-top: 0.25rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: white;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
-    .site-title {
-        color: white;
+  }
+
+  /* ============================
+     TABLET
+     ============================ */
+  @media (min-width: 640px) {
+    .location-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+
+      > div {
+        width: 260px;
+      }
     }
+  }
+
+  /* ============================
+     DESKTOP
+     ============================ */
+  @media (min-width: 1024px) {
+    .location-group {
+      flex-wrap: nowrap;
+      gap: 4rem;
+    }
+  }
+
+  /* ============================
+     TAGLINE
+     ============================ */
+  .site-title {
+    color: white;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+  }
 }

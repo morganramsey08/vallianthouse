@@ -1,0 +1,72 @@
+.navigation {
+  width: 100%;
+  background: transparent;
+  padding: 12rem 0 0;
+
+  .logo {
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    .leaf {
+      font-size: 1.1rem;
+    }
+  }
+
+  a, button {
+    color: #142246;
+    text-decoration: none;
+
+    &:hover {
+      color: #2563eb;
+    }
+  }
+
+
+  .mobile-menu {
+    background: white;
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
+
+/* Shared nav styles */
+.home-nav,
+header {
+  a {
+    letter-spacing: 0.08em;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+/* Home-only nav */
+.home-nav {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+
+  a, button {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:visited {
+      color: white;
+    }
+  }
+
+  .sub-menu {
+    a {
+      color: #142246;
+      text-decoration: none;
+    }
+  }
+}

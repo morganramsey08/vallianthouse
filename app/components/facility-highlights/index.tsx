@@ -3,7 +3,7 @@
 import { LucideIcon } from 'lucide-react';
 import * as Icons from 'lucide-react';
 
-type HighlightItem = {
+export type HighlightItem = {
   title: string;
   description: string;
   icon: keyof typeof Icons;

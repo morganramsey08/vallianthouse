@@ -1,8 +1,8 @@
 'use client';
-import FacilityHighlights from './../../components/facility-highlights/index';
-import VideoSection from './../../components/video-section/index';
+import VideoSection, { type BulletItem } from '@/app/components/video-section';
+import FacilityHighlights, { type HighlightItem } from '@/app/components/facility-highlights';
 
-const highlights = [
+const highlights: HighlightItem[] = [
   {
     title: "Men's Specialized Care",
     description:
@@ -41,7 +41,7 @@ const highlights = [
   },
 ];
 
-const bullets = [
+const bullets: BulletItem[] = [
   { icon: 'Users', text: 'High-quality team collaboration' },
   { icon: 'Shield', text: 'Secure and reliable solutions' },
   { icon: 'Heart', text: 'Customer-first philosophy' },
@@ -59,7 +59,7 @@ return (
           videoUrl="https://player.vimeo.com/video/1110534524?h=6e36d6e60c"
           bullets={bullets}
           videoOnLeft={true}
-        />        
+        />
         <VideoSection
           videoUrl="https://player.vimeo.com/video/1111809935?h=11842906"
           bullets={bullets}

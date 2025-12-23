@@ -1,16 +1,16 @@
 'use client';
 
-import VideoSection from "@/app/components/video-section";
-import FacilityHighlights from '@/app/components/facility-highlights';
+import VideoSection, { type BulletItem } from '@/app/components/video-section';
+import FacilityHighlights, { type HighlightItem } from '@/app/components/facility-highlights';
 import VimeoVideoGrid from "@/app/components/video-grid";
 
-const bullets = [
+const bullets: BulletItem[] = [
   { icon: 'Users', text: 'High-quality team collaboration' },
   { icon: 'Shield', text: 'Secure and reliable solutions' },
   { icon: 'Heart', text: 'Customer-first philosophy' },
 ];
 
-const highlights = [
+const highlights: HighlightItem[] = [
   {
     title: "Men's Specialized Care",
     description:

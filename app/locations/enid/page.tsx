@@ -1,21 +1,21 @@
 'use client';
 
-import VideoSection from "@/app/components/video-section";
-import FacilityHighlights from '@/app/components/facility-highlights';
-import VimeoVideoGrid from "@/app/components/video-grid";
+import VideoSection, { type BulletItem } from '@/app/components/video-section';
+import FacilityHighlights, { type HighlightItem } from '@/app/components/facility-highlights';
+import VimeoVideoGrid from '@/app/components/video-grid';
 
-const bullets = [
+const bullets: BulletItem[] = [
   { icon: 'Users', text: 'High-quality team collaboration' },
   { icon: 'Shield', text: 'Secure and reliable solutions' },
   { icon: 'Heart', text: 'Customer-first philosophy' },
 ];
 
-const highlights = [
+const highlights: HighlightItem[] = [
   {
     title: "Men's Specialized Care",
     description:
       "Dedicated facility designed specifically for men's addiction recovery needs with tailored programming and support.",
-    icon: 'Users', // Lucide icon name
+    icon: 'Users',
   },
   {
     title: 'Group Therapy',
@@ -53,24 +53,29 @@ export default function EnidPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start">
       <div className="w-full mx-auto max-w-7xl px-6 py-16">
-          <h1 className="text-3xl font-semibold mb-2 align-left">
-            Enid
-          </h1>
-          <VideoSection
-              videoUrl="https://player.vimeo.com/video/1110534524?h=6e36d6e60c"
-              bullets={bullets}
-              videoOnLeft={true}
-            />
-            <VimeoVideoGrid
-              videos={[
-                { id: '1111775662', title: 'Ty' },
-                { id: '1111733976', title: 'Nicki' },
-                { id: '1111775294', title: 'Chipper' },
-                { id: '1111775857', title: 'Tim' },
-              ]}
-            />
+        <h1 className="text-3xl font-semibold mb-6 text-left">
+          Enid
+        </h1>
+
+        <VideoSection
+          videoUrl="https://player.vimeo.com/video/1110534524?h=6e36d6e60c"
+          bullets={bullets}
+          videoOnLeft={true}
+        />
+
+        <div className="mt-16">
+          <VimeoVideoGrid
+            videos={[
+              { id: '1111775662', title: 'Ty' },
+              { id: '1111733976', title: 'Nicki' },
+              { id: '1111775294', title: 'Chipper' },
+              { id: '1111775857', title: 'Tim' },
+            ]}
+          />
         </div>
-         <FacilityHighlights items={highlights} />
       </div>
+
+      <FacilityHighlights items={highlights} />
+    </div>
   );
 }

@@ -4,8 +4,8 @@ import React from 'react';
 import * as Icons from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
-interface BulletItem {
-  icon: keyof typeof Icons; // same as your highlights page
+export interface BulletItem {
+  icon: keyof typeof Icons;
   text: string;
 }
 

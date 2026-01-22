@@ -3,6 +3,7 @@
 import VideoSection, { type BulletItem } from '@/app/components/video-section';
 import FacilityHighlights, { type HighlightItem } from '@/app/components/facility-highlights';
 import VimeoVideoGrid from '@/app/components/video-grid';
+import ImageGallery from '@/app/components/image-gallery/image-gallery';
 
 const bullets: BulletItem[] = [
   { icon: 'Users', text: 'High-quality team collaboration' },
@@ -57,10 +58,12 @@ export default function EnidPage() {
           Enid
         </h1>
 
-        <VideoSection
-          videoUrl="https://player.vimeo.com/video/1110534524?h=6e36d6e60c"
-          bullets={bullets}
-          videoOnLeft={true}
+        <ImageGallery
+          images={[
+            { src: '/img/vhouse-enid-1.JPG', alt: 'Valliant House - Enid' },
+            { src: '/img/vhouse-enid-2.JPG', alt: 'Valliant House - Enid' },
+            { src: '/img/vhouse-enid-3.JPG', alt: 'Valliant House - Enid' },
+          ]}
         />
 
         <div className="mt-16">

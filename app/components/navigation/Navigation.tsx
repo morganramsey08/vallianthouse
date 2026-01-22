@@ -68,13 +68,6 @@ export default function Navigation() {
               </div>
             )}
           </div>
-
-          <Link
-            href="/testimonials"
-            className={isActive('/testimonials') ? 'active' : ''}
-          >
-            Testimonials
-          </Link>
         </nav>
 
         {/* Mobile Toggle */}
@@ -126,14 +119,6 @@ export default function Navigation() {
                 </div>
               )}
             </div>
-
-            <Link
-              href="/testimonials"
-              className={isActive('/testimonials') ? 'active' : ''}
-              onClick={() => setOpen(false)}
-            >
-              Testimonials
-            </Link>
           </nav>
         </div>
       )}

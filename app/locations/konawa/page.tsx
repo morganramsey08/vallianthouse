@@ -56,12 +56,18 @@ return (
         Konawa
       </h1>
         <VideoSection
-          videoUrl="https://player.vimeo.com/video/1110534524?h=6e36d6e60c"
+          media={{
+            type: 'video',
+            src: 'https://player.vimeo.com/video/1110534524?h=6e36d6e60c',
+          }}
           bullets={bullets}
           videoOnLeft={true}
         />
         <VideoSection
-          videoUrl="https://player.vimeo.com/video/1111809935?h=11842906"
+          media={{
+            type: 'video',
+            src: 'https://player.vimeo.com/video/1111809935?h=11842906',
+          }}
           bullets={bullets}
           videoOnLeft={false}
         />

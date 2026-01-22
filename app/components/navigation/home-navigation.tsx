@@ -43,8 +43,6 @@ export default function HomeNavigation() {
           </div>
         )}
       </div>
-
-      <Link href="/testimonials">Testimonials</Link>
     </nav>
   );
 }

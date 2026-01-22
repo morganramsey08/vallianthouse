@@ -57,7 +57,11 @@ export default function ValliantPage() {
             Valliant
           </h1>
           <VideoSection
-              videoUrl="https://player.vimeo.com/video/1111870777?h=11842906"
+                media={{
+                  type: 'image',
+                  src: '/images/vhouse-drone.jpg',
+                  alt: 'Valliant House',
+                }}
               bullets={bullets}
               videoOnLeft={true}
             />
@@ -65,7 +69,7 @@ export default function ValliantPage() {
               videos={[
                 { id: '1111870878', title: 'Frances' },
                 { id: '1111870850', title: 'Baily' },
-                { id: '1111870825', title: 'Raven' },
+                { id: '1111870777', title: 'Amanda' },
               ]}
             />
         </div>

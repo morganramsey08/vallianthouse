@@ -1,4 +1,4 @@
-@import '../styles/abstract/variables';
+@use '../styles/abstract/variables';
 
 .home {
   min-height: 100vh;
@@ -15,6 +15,25 @@
   align-items: center;
 
   color: var(--text-white);
+
+  /* Mobile - darker overlay */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+    /* Make all content appear above overlay */
+  > * {
+    position: relative;
+    z-index: 2;
+  }
 
   /* ============================
      LOCATION GROUP
@@ -54,6 +73,9 @@
      TABLET
      ============================ */
   @media (min-width: 640px) {
+    &::before {
+      background: rgba(0, 0, 0, 0); /* Remove overlay */
+    }
     .location-group {
       flex-direction: row;
       flex-wrap: wrap;

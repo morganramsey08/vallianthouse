@@ -1,40 +1,16 @@
 'use client';
 
-import VideoSection, { type BulletItem } from '@/app/components/video-section';
 import FacilityHighlights, { type HighlightItem } from '@/app/components/facility-highlights';
 import VimeoVideoGrid from '@/app/components/video-grid';
 import ImageGallery from '@/app/components/image-gallery/image-gallery';
 
-const bullets: BulletItem[] = [
-  { icon: 'Users', text: 'High-quality team collaboration' },
-  { icon: 'Shield', text: 'Secure and reliable solutions' },
-  { icon: 'Heart', text: 'Customer-first philosophy' },
-];
 
 const highlights: HighlightItem[] = [
   {
-    title: "Men's Specialized Care",
+    title: "Men’s Specialized Care",
     description:
       "Dedicated facility designed specifically for men's addiction recovery needs with tailored programming and support.",
     icon: 'Users',
-  },
-  {
-    title: 'Group Therapy',
-    description:
-      'Regular group therapy sessions fostering peer support and shared healing experiences in recovery.',
-    icon: 'MessageCircle',
-  },
-  {
-    title: 'Insurance Accepted',
-    description:
-      'We work with most major insurance providers to make treatment accessible and affordable for our patients.',
-    icon: 'Shield',
-  },
-  {
-    title: 'Family Visitation',
-    description:
-      'Structured family visitation programs to maintain important relationships during recovery process.',
-    icon: 'Heart',
   },
   {
     title: '60-Day Program',
@@ -43,10 +19,16 @@ const highlights: HighlightItem[] = [
     icon: 'Calendar',
   },
   {
-    title: 'Transportation Services',
+    title: 'Family Visitation',
     description:
-      'Transportation provided to detox facilities, outside meetings, and essential appointments.',
-    icon: 'Car',
+      'Structured family visitation programs to maintain important relationships during recovery process.',
+    icon: 'Heart',
+  },
+  {
+    title: 'Insurance Accepted',
+    description:
+      'We work with most major insurance providers to make treatment accessible and affordable for our patients.',
+    icon: 'Shield',
   },
 ];
 

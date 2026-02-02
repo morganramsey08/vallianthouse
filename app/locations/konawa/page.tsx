@@ -4,28 +4,10 @@ import FacilityHighlights, { type HighlightItem } from '@/app/components/facilit
 
 const highlights: HighlightItem[] = [
   {
-    title: "Men's Specialized Care",
+    title: "Men’s Specialized Care",
     description:
       "Dedicated facility designed specifically for men's addiction recovery needs with tailored programming and support.",
-    icon: 'Users', // Lucide icon name
-  },
-  {
-    title: 'Group Therapy',
-    description:
-      'Regular group therapy sessions fostering peer support and shared healing experiences in recovery.',
-    icon: 'MessageCircle',
-  },
-  {
-    title: 'Insurance Accepted',
-    description:
-      'We work with most major insurance providers to make treatment accessible and affordable for our patients.',
-    icon: 'Shield',
-  },
-  {
-    title: 'Family Visitation',
-    description:
-      'Structured family visitation programs to maintain important relationships during recovery process.',
-    icon: 'Heart',
+    icon: 'Users',
   },
   {
     title: '60-Day Program',
@@ -34,17 +16,29 @@ const highlights: HighlightItem[] = [
     icon: 'Calendar',
   },
   {
-    title: 'Transportation Services',
+    title: 'Family Visitation',
     description:
-      'Transportation provided to detox facilities, outside meetings, and essential appointments.',
-    icon: 'Car',
+      'Structured family visitation programs to maintain important relationships during recovery process.',
+    icon: 'Heart',
+  },
+  {
+    title: 'Insurance Accepted',
+    description:
+      'We work with most major insurance providers to make treatment accessible and affordable for our patients.',
+    icon: 'Shield',
   },
 ];
 
 const bullets: BulletItem[] = [
-  { icon: 'Users', text: 'High-quality team collaboration' },
-  { icon: 'Shield', text: 'Secure and reliable solutions' },
-  { icon: 'Heart', text: 'Customer-first philosophy' },
+  { icon: 'TreePine', text: '50 Acre Farm with numerous amenities and peaceful environment for recovery.' },
+  { icon: 'BookHeart', text: 'Hands-on personal attention and support from staff that is in recovery themselves.' },
+  { icon: 'Calendar', text: 'Men’s Specialized Care, 60-Day Program.' },
+];
+
+const bulletsSecond: BulletItem[] = [
+  { icon: 'Users', text: '50 Acre Farm with numerous amenities and peaceful environment for recovery.' },
+  { icon: 'Shield', text: 'Hands-on personal attention and support from staff that is in recovery themselves.' },
+  { icon: 'Heart', text: 'Men’s Specialized Care, 60-Day Program.' },
 ];
 
 export default function KonawaPage() {
@@ -68,7 +62,7 @@ return (
             type: 'video',
             src: 'https://player.vimeo.com/video/1111809935?h=11842906',
           }}
-          bullets={bullets}
+          bullets={bulletsSecond}
           videoOnLeft={false}
         />
       </div>

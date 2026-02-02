@@ -5,16 +5,16 @@ import FacilityHighlights, { type HighlightItem } from '@/app/components/facilit
 import VimeoVideoGrid from "@/app/components/video-grid";
 
 const bullets: BulletItem[] = [
-  { icon: 'Users', text: 'High-quality team collaboration' },
-  { icon: 'Shield', text: 'Secure and reliable solutions' },
-  { icon: 'Heart', text: 'Customer-first philosophy' },
+  { icon: 'Users', text: 'In operation for over 20 years, over 10,000 served' },
+  { icon: 'Shield', text: 'Highly professional, credentialed staff, many of whom are in recovery themselves' },
+  { icon: 'Heart', text: 'Adjacent police and fire protection and city park with numerous amenities' },
 ];
 
 const highlights: HighlightItem[] = [
   {
-    title: "Men's Specialized Care",
+    title: "Women's Specialized Care",
     description:
-      "Dedicated facility designed specifically for men's addiction recovery needs with tailored programming and support.",
+      "Dedicated facility designed specifically for women's addiction recovery needs with tailored programming and support.",
     icon: 'Users', // Lucide icon name
   },
   {
@@ -41,12 +41,6 @@ const highlights: HighlightItem[] = [
       'Comprehensive 60-day residential treatment program providing intensive support and skill development.',
     icon: 'Calendar',
   },
-  {
-    title: 'Transportation Services',
-    description:
-      'Transportation provided to detox facilities, outside meetings, and essential appointments.',
-    icon: 'Car',
-  },
 ];
 
 export default function ValliantPage() {
@@ -67,9 +61,9 @@ export default function ValliantPage() {
             />
             <VimeoVideoGrid
               videos={[
+                { id: '1111870777', title: 'Amanda' },
                 { id: '1111870878', title: 'Frances' },
                 { id: '1111870850', title: 'Baily' },
-                { id: '1111870777', title: 'Amanda' },
               ]}
             />
         </div>

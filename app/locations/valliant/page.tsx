@@ -53,7 +53,7 @@ export default function ValliantPage() {
           <VideoSection
                 media={{
                   type: 'image',
-                  src: '/img/vhouse-drone.jpg',
+                  src: '/img/vhouse-drone.JPG',
                   alt: 'Valliant House',
                 }}
               bullets={bullets}

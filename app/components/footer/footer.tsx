@@ -27,8 +27,9 @@ export default function GlobalFooter() {
         <div className="footer-contact">
           <h4>Contact Us</h4>
             <a href="tel:15802033600"><span className='block mt-2'>For Women&apos;s Treatment:</span> (405) 584-8668</a>
-            <a href="tel:15809252650"><span className='block'>For Men&apos;s Treatment:</span> Josh (580) 925-2650</a>
-            <a href="tel:1580"><span className='block'>After Hours Treatment:</span> (580) 925-2650</a>
+            <a href="tel:15802033600"><span className='block mt-2'>After Hours Women&apos;s Treatment:</span> (405) 584-8668</a>
+            <a href="tel:15809252650"><span className='block mt-2'>For Men&apos;s Treatment:</span> Josh (580) 925-2650</a>
+            <a href="tel:1580"><span className='block mt-2'>After Hours Men&apos;s Treatment:</span> (580) 925-2650</a>
         </div>
       </div>
 

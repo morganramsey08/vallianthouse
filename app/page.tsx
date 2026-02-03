@@ -16,7 +16,7 @@ export default function HomePage() {
   const VALLIANT_LABEL = "Valliant";
   const VALLIANT_PHONE = "(580) 203-3600";
 
-  const TAG_LINE = "Tagline Goes Here";
+  const TAG_LINE = "Nothing Changes if Nothing Changes.";
 
   /* ========================================================== */
 

@@ -1,6 +1,7 @@
 'use client';
 import VideoSection, { type BulletItem } from '@/app/components/video-section';
 import FacilityHighlights, { type HighlightItem } from '@/app/components/facility-highlights';
+import VimeoVideoGrid from '@/app/components/video-grid';
 
 const highlights: HighlightItem[] = [
   {
@@ -20,25 +21,13 @@ const highlights: HighlightItem[] = [
     description:
       'Structured family visitation programs to maintain important relationships during recovery process.',
     icon: 'Heart',
-  },
-  {
-    title: 'Insurance Accepted',
-    description:
-      'We work with most major insurance providers to make treatment accessible and affordable for our patients.',
-    icon: 'Shield',
-  },
+  }
 ];
 
 const bullets: BulletItem[] = [
   { icon: 'TreePine', text: '50 Acre Farm with numerous amenities and peaceful environment for recovery.' },
   { icon: 'BookHeart', text: 'Hands-on personal attention and support from staff that is in recovery themselves.' },
   { icon: 'Calendar', text: 'Men’s Specialized Care, 60-Day Program.' },
-];
-
-const bulletsSecond: BulletItem[] = [
-  { icon: 'Users', text: '50 Acre Farm with numerous amenities and peaceful environment for recovery.' },
-  { icon: 'Shield', text: 'Hands-on personal attention and support from staff that is in recovery themselves.' },
-  { icon: 'Heart', text: 'Men’s Specialized Care, 60-Day Program.' },
 ];
 
 export default function KonawaPage() {
@@ -50,24 +39,23 @@ return (
         Konawa
       </h1>
         <VideoSection
-          media={{
-            type: 'video',
-            src: 'https://player.vimeo.com/video/1110534524?h=6e36d6e60c',
-          }}
+            media={{
+              type: 'image',
+              src: '/img/konawa-house.jpg',
+              alt: 'Konawa',
+            }}
           bullets={bullets}
           videoOnLeft={true}
         />
-        <VideoSection
-          media={{
-            type: 'video',
-            src: 'https://player.vimeo.com/video/1111809935?h=11842906',
-          }}
-          bullets={bulletsSecond}
-          videoOnLeft={false}
+        <VimeoVideoGrid
+          videos={[
+            { id: '1110534524', title: 'Konowa' },
+            { id: '1111809935', title: 'Seth' },
+          ]}
         />
       </div>
 
-        <FacilityHighlights items={highlights} />
+      <FacilityHighlights items={highlights} />
 
     </div>
   );

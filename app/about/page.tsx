@@ -26,7 +26,7 @@ export default function AboutPage() {
             <p className="text-gray-600 mb-4">
               For over two decades, Valliant House has been dedicated to helping
               individuals overcome addiction and establish a foundation for
-              long-term recovery. With more than 14,000 patients served, our
+              long-term recovery. With more than 12,500 patients served, our
               experienced team understands the complexities of addiction and
               provides compassionate, evidence-based care.
             </p>
@@ -45,7 +45,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="font-semibold">Transportation</p>
-                <p className="text-gray-500">To detox and meetings</p>
+                <p className="text-gray-500">Services available as needed</p>
               </div>
               <div>
                 <p className="font-semibold">Sober Living</p>

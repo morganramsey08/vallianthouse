@@ -1,4 +1,6 @@
 @use '../styles/abstract/variables';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
 
 .home {
   min-height: 100vh;
@@ -101,10 +103,43 @@
   /* ============================
      TAGLINE
      ============================ */
-  .site-title {
-    color: white;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+
+  position: relative;
+  max-width: 900px;
+  padding: 2.5rem 3rem;
+
+  letter-spacing: 0.015em;
+  line-height: 1.35;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  &::before,
+  &::after {
+    position: absolute;
+    font-size: 6rem;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.62);
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "“";
+    top: .5rem;
+    left: -1rem;
+  }
+
+  &::after {
+    content: "”";
+    bottom: 1rem;
+    right: -1rem;
   }
 }
+

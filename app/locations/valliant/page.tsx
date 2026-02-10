@@ -24,12 +24,6 @@ const highlights: HighlightItem[] = [
     icon: 'MessageCircle',
   },
   {
-    title: 'Insurance Accepted',
-    description:
-      'We work with most major insurance providers to make treatment accessible and affordable for our patients.',
-    icon: 'Shield',
-  },
-  {
     title: 'Family Visitation',
     description:
       'Structured family visitation programs to maintain important relationships during recovery process.',

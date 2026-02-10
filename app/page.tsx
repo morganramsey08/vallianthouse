@@ -62,7 +62,7 @@ export default function HomePage() {
       {/* TAG LINE - The primary highlight */}
       <section className="w-full flex justify-center mt-20 mb-12 text-center">
         {/* Uses the site-title class for the green color */}
-        <h2 className="site-title mt-8 text-4xl md:text-4xl font-extrabold"> 
+        <h2 className="tagline site-title mt-8 text-4xl md:text-4xl font-extrabold"> 
           {TAG_LINE}
         </h2>
       </section>

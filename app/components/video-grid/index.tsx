@@ -20,13 +20,17 @@ export default function VimeoVideoGrid({ videos }: VimeoVideoGridProps) {
     <>
       {/* GRID */}
       <section className="w-full mt-12 mb-16">
-        <div
-          className={`grid gap-6 ${
-            videos.length === 3
-              ? 'grid-cols-1 sm:grid-cols-3'
-              : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
-          }`}
-        >
+      <div
+        className={`grid gap-6 ${
+          videos.length === 1
+            ? 'grid-cols-1'
+            : videos.length === 2
+            ? 'grid-cols-1 sm:grid-cols-2'
+            : videos.length === 3
+            ? 'grid-cols-1 sm:grid-cols-3'
+            : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
+        }`}
+      >
           {videos.map((video) => (
             <button
               key={video.id}
